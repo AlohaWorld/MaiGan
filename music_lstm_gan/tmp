@@ -1,0 +1,30 @@
+### for train
+1. GPU
+--run_dir=output/
+--examples_path=/home/gaoting/dl4m/magenta-master/magenta/scripts/output/lmd_matched.tfrecord
+--load_model=20191009-1030/
+--config=gl_dl_16bar
+
+--run_dir=output/
+--examples_path=/home/gaoting/dl4m/magenta-master/magenta/scripts/output/lmd_matched.tfrecord
+--config=gl_dc_16bar
+--load_model=20191010-1520/
+--clipping_value=0.1
+
+--run_dir=output/
+--examples_path=/home/gaoting/dl4m/magenta-master/magenta/scripts/output/lmd_matched.tfrecord
+--config=glp_dc_16bar
+--is_transform=True
+
+2. local
+--run_dir=output/
+--examples_path=/home/ting/project/dl4m/dataset/lmd_matched.tfrecord
+--config=gl_db-l_16bar_test
+
+### for generate
+1. GPU
+
+--run_dir=output/
+--load_model=20190927-2108/
+--config=gl_dl_16bar
+--output_dir=output/generate/
